@@ -10,6 +10,15 @@
   --font-size-10: 10px;
 }
 
+@layer base {
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #f5f0f0;
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
 @layer components {
   .custom-container {
     width: 90%;
@@ -27,5 +36,13 @@
 
   .MuiBadge-badge {
     background-color: var(--color-primary-main) !important;
+  }
+
+  nav ul button {
+    text-transform: capitalize !important;
+  }
+
+  nav ul button:hover {
+    background: none !important;
   }
 }
