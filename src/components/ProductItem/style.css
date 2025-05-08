@@ -1,0 +1,12 @@
+.productItem .title {
+  line-height: 18px;
+}
+
+.productItem .actions button:hover svg {
+  color: #fff !important;
+}
+
+/* Ngăn chặn hiệu ứng hover hoặc click không mong muốn xảy ra trên SVG */
+.productItem .actions button svg {
+  pointer-events: none !important;
+}
