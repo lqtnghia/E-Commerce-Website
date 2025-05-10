@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 interface IProps {
   info: string;
   image: string;
+  link?: string;
 }
 
 const BannerBoxV2 = (props: IProps) => {

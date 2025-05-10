@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../components/Header";
 import HomeSlider from "../../components/HomeSlider";
 import HomeCatSlider from "../../components/HomeCatSlider";
 import { LiaShippingFastSolid } from "react-icons/lia";
@@ -15,9 +14,9 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import BlogItem from "../../components/BlogItem";
-import Footer from "../../components/Footer";
 import HomeBannerV2 from "../../components/HomeSliderV2";
 import BannerBoxV2 from "../../components/BannerBoxV2";
+import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2";
 
 const HomePage = () => {
   const [value, setValue] = React.useState(0);
@@ -28,7 +27,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <Header />
       <HomeSlider />
       <section className="py-6">
         <div className="custom-container flex items-center gap-5">
@@ -102,7 +100,7 @@ const HomePage = () => {
               <p className=" text-[25px] font-bold">- Only $200*</p>
             </div>
           </div>
-          <AdsBannerSlider items={6} />
+          <AdsBannerSliderV2 items={4} />
         </div>
       </section>
 
@@ -152,8 +150,6 @@ const HomePage = () => {
           </Swiper>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

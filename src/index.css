@@ -20,11 +20,11 @@
   }
 
   ::-webkit-scrollbar {
-    width: 8px !important;
-    height: 8px !important;
+    width: 8px;
+    height: 8px;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #ccc;
+    background-color: var(--color-primary-main);
   }
   ::-webkit-scrollbar-track {
     background-color: #fff;
@@ -54,6 +54,10 @@
     padding: 7px 20px;
   }
 
+  .btn-org:hover {
+    background: #171717 !important;
+  }
+
   .MuiBadge-badge {
     background-color: var(--color-primary-main) !important;
   }
@@ -81,5 +85,22 @@
   .MuiFormControlLabel-label {
     font-size: 13px !important;
     color: rgba(0, 0, 0, 0.8);
+  }
+
+  .MuiCheckbox-root {
+    padding: 6px !important;
+  }
+
+  .ReactCollapse--collapse {
+    transition: height 400ms;
+  }
+
+  .itemViewActions button.active svg {
+    color: #ff5252 !important;
+  }
+
+  .Mui-selected.MuiPaginationItem-page {
+    background: #ff5252 !important;
+    color: #fff !important;
   }
 }

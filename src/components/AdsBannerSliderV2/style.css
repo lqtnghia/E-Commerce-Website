@@ -1,0 +1,17 @@
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  top: 55% !important;
+}
+
+.smlBtn .swiper-button-prev:after,
+.smlBtn .swiper-button-next:after {
+  font-size: 18px !important;
+}
+
+.smlBtn .swiper-button-prev:hover,
+.smlBtn .swiper-button-next:hover {
+  background: #ff5252 !important;
+}

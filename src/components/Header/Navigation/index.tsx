@@ -158,7 +158,7 @@ const Navigation = () => {
                   className="link transition text-[14px] !font-[500]"
                 >
                   <Button className="link transition !font-[500] !text-black/80 hover:!text-[#ff5252]">
-                    Eletrionics
+                    Electronics
                   </Button>
                 </Link>
               </li>
