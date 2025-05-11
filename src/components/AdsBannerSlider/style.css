@@ -15,3 +15,8 @@
 .smlBtn .swiper-button-next:hover {
   background: #ff5252 !important;
 }
+
+.smlBtn .swiper-button-prev:hover::after,
+.smlBtn .swiper-button-next:hover::after {
+  color: #fff !important;
+}
