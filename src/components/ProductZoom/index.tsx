@@ -42,7 +42,7 @@ const ProductZoom = () => {
               }}
             >
               <img
-                src="https://serviceapi.spicezgold.com/download/1742463096955_hbhb1.jpg"
+                src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-thomas-nguyen-1000x1000.webp"
                 className="w-full group-hover:scale-105"
               />
             </div>
@@ -57,7 +57,7 @@ const ProductZoom = () => {
               }}
             >
               <img
-                src="https://serviceapi.spicezgold.com/download/1742463096956_hbhb2.jpg"
+                src="https://thomasnguyentailor.com/wp-content/uploads/2025/03/may-vest-mau-xanh-da-troi-dep-ben-sky-blue-thomas-nguyen.webp"
                 className="w-full group-hover:scale-105"
               />
             </div>
@@ -72,7 +72,7 @@ const ProductZoom = () => {
               }}
             >
               <img
-                src="https://serviceapi.spicezgold.com/download/1742463096960_hbhb3.jpg"
+                src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-sky-blue-thomas-nguyen.webp"
                 className="w-full group-hover:scale-105"
               />
             </div>
@@ -87,7 +87,37 @@ const ProductZoom = () => {
               }}
             >
               <img
-                src="https://serviceapi.spicezgold.com/download/1742463096961_hbhb4.jpg"
+                src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-sky-blue-tui-hong-thomas-nguyen.webp"
+                className="w-full group-hover:scale-105"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className={`item rounded-md overflow-hidden cursor-pointer group ${
+                slideIndex === 4 ? "opacity-100" : "opacity-30"
+              }`}
+              onClick={() => {
+                goto(4);
+              }}
+            >
+              <img
+                src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-sky-blue-lop-lot-ao-vest-thomas-nguyen-1000x1000.webp"
+                className="w-full group-hover:scale-105"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className={`item rounded-md overflow-hidden cursor-pointer group ${
+                slideIndex === 5 ? "opacity-100" : "opacity-30"
+              }`}
+              onClick={() => {
+                goto(5);
+              }}
+            >
+              <img
+                src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-sky-blue-quan-tay-thomas-nguyen.webp"
                 className="w-full group-hover:scale-105"
               />
             </div>
@@ -106,28 +136,42 @@ const ProductZoom = () => {
             <InnerImageZoom
               zoomType="hover"
               zoomScale={1}
-              src="https://serviceapi.spicezgold.com/download/1742463096955_hbhb1.jpg"
+              src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-thomas-nguyen-1000x1000.webp"
             />
           </SwiperSlide>
           <SwiperSlide>
             <InnerImageZoom
               zoomType="hover"
               zoomScale={1}
-              src="https://serviceapi.spicezgold.com/download/1742463096956_hbhb2.jpg"
+              src="https://thomasnguyentailor.com/wp-content/uploads/2025/03/may-vest-mau-xanh-da-troi-dep-ben-sky-blue-thomas-nguyen.webp"
             />
           </SwiperSlide>
           <SwiperSlide>
             <InnerImageZoom
               zoomType="hover"
               zoomScale={1}
-              src="https://serviceapi.spicezgold.com/download/1742463096960_hbhb3.jpg"
+              src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-sky-blue-thomas-nguyen.webp"
             />
           </SwiperSlide>
           <SwiperSlide>
             <InnerImageZoom
               zoomType="hover"
               zoomScale={1}
-              src="https://serviceapi.spicezgold.com/download/1742463096961_hbhb4.jpg"
+              src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-sky-blue-tui-hong-thomas-nguyen.webp"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <InnerImageZoom
+              zoomType="hover"
+              zoomScale={1}
+              src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-sky-blue-lop-lot-ao-vest-thomas-nguyen-1000x1000.webp"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <InnerImageZoom
+              zoomType="hover"
+              zoomScale={1}
+              src="https://thomasnguyentailor.com/wp-content/uploads/2025/02/may-vest-mau-xanh-da-troi-sky-blue-quan-tay-thomas-nguyen.webp"
             />
           </SwiperSlide>
         </Swiper>

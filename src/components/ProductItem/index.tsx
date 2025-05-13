@@ -23,11 +23,11 @@ const ProductItem = () => {
         <Link to="/">
           <div className="img overflow-hidden h-[220px]">
             <img
-              src="https://serviceapi.spicezgold.com/download/1742441181779_apple-iphone-13-128-gb-pink-digital-o491997703-p590798557-0-202208221207.webp"
+              src="https://locphuc.com.vn/Content/Images/122024/DMR0078ARM.WG01A/vo-nhan-nam-kim-cuong-DMR0078ARM-WG01A-g1.jpg"
               className="w-full"
             />
             <img
-              src="https://serviceapi.spicezgold.com/download/1742441181780_apple-iphone-13-128-gb-pink-digital-o491997703-p590798557-3-202208221207.jpeg"
+              src="https://locphuc.com.vn/Content/Images/122024/DMR0078ARM.WG01A/vo-nhan-nam-kim-cuong-DMR0078ARM-WG01A-g3.jpg"
               className="w-full absolute transition-all duration-700 top-0 left-0 opacity-0 group-hover:opacity-100 group-hover:scale-105"
             />
           </div>
@@ -66,12 +66,12 @@ const ProductItem = () => {
       <div className="info p-3 py-5 bg-[#fff] ">
         <h6 className="text-[13px] !font-[400]">
           <Link to="/" className="link transition-all">
-            Apple
+            Diamond rings
           </Link>
         </h6>
         <h3 className="text-[13px] title mt-1 font-[600] mb-1 text-[#000]">
           <Link to="/" className="link transition-all">
-            Apple iPhone 15 (Blue, 512G, Titan, VIP)
+            Men's Diamond Ring Case
           </Link>
         </h3>
 

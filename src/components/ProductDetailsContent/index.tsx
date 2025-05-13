@@ -10,7 +10,9 @@ const ProductDetailsContent = () => {
   );
   return (
     <>
-      <h1 className="text-[24px] font-[600] mb-2">Men Opaque Casual Shirt</h1>
+      <h1 className="text-[24px] font-[600] mb-2">
+        Men's 3-piece suit | Sky Blue | Sewing a blue vest
+      </h1>
       <div className="flex items-center gap-3">
         <span className="text-[13px] text-gray-400">
           Brands:{" "}
@@ -36,11 +38,11 @@ const ProductDetailsContent = () => {
         </span>
       </div>
       <p className="mt-3 pr-10 mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-        molestias rerum ullam hic, earum saepe sit dolorem eaque, suscipit
-        voluptatum, nulla reprehenderit magni quae illum nam asperiores libero
-        dolorum quisquam, nulla reprehenderit magni quae illum nam asperiores
-        libero dolorum quisquam?
+        Sky Blue 3-piece men's suit includes a suit jacket, a waistcoat, and a
+        trouser. Bright tones like sky blue are an extremely suitable choice for
+        summer because of their ability to better protect the skin from
+        ultraviolet rays. Fabric from the high-end Vercelli brand helps the Sky
+        Blue suit have a luxurious, smooth look.
       </p>
 
       <div className="flex items-center gap-3">

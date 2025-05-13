@@ -11,6 +11,8 @@ import DialogContentText from "@mui/material/DialogContentText";
 import ProductZoom from "./components/ProductZoom";
 import { IoClose } from "react-icons/io5";
 import ProductDetailsContent from "./components/ProductDetailsContent";
+import LoginPage from "./Pages/Login";
+import RegisterPage from "./Pages/Register";
 
 interface MyContextType {
   setOpenProductDetailsModal: (value: boolean) => void;
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <ProductDetails />
+      },
+      {
+        path: "/login",
+        element: <LoginPage />
+      },
+      {
+        path: "/register",
+        element: <RegisterPage />
       }
     ]
   }
