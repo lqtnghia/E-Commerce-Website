@@ -59,8 +59,14 @@ const Header = () => {
         <div className="custom-container flex items-center justify-between">
           {/* logo */}
           <div className="col1 w-[25%]">
-            <Link to="/">
+            {/* <Link to="/">
               <img src="/logo.jpg" />
+            </Link> */}
+            <Link
+              to="/"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-2xl font-bold"
+            >
+              NghiaEcommerce
             </Link>
           </div>
           {/* search */}

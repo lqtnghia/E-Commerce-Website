@@ -185,4 +185,9 @@
   .reviewScroll::-webkit-scrollbar-thumb {
     background: #ccc !important;
   }
+
+  /* Modal */
+  .productDetailsModal .MuiDialogContent-root {
+    padding: 0px !important;
+  }
 }

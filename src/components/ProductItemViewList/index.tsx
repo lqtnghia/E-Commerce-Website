@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../ProductItem/style.css";
 import { Link } from "react-router-dom";
 import Rating from "@mui/material/Rating";
@@ -8,8 +8,16 @@ import { CiShare1 } from "react-icons/ci";
 import { MdZoomOutMap } from "react-icons/md";
 import { Button } from "@mui/material";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { MyContext } from "../../App";
 
 const ProductItemViewList = () => {
+  const context = useContext(MyContext);
+
+  const handleOpenModal = (event: React.MouseEvent<HTMLButtonElement>) => {
+    if (context) {
+      context.setOpenProductDetailsModal(true);
+    }
+  };
   return (
     <div className="productItem flex items-center rounded-md shadow-lg overflow-hidden border-1 border-[rgba(0,0,0,0.1)]">
       <div className="group imgWrapper rounded-md overflow-hidden w-[25%] h-[220px] relative">
@@ -44,6 +52,7 @@ const ProductItemViewList = () => {
           <Button
             className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white !text-black hover:!text-white hover:!bg-primary-main group
           "
+            onClick={handleOpenModal}
           >
             <MdZoomOutMap className="text-[18px]" />
           </Button>
