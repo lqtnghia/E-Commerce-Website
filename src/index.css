@@ -131,6 +131,11 @@
     background: #ff5252 !important;
     color: #fff !important;
   }
+  /* App.tsx */
+  .cartPanel .MuiPaper-root {
+    width: 400px;
+    overflow: hidden;
+  }
 
   /* ProductZoom */
   .zoomProductSliderThumbs .swiper-button-prev:hover,

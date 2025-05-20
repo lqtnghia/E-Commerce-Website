@@ -1,9 +1,10 @@
 import { createContext, useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import HomePage from "./Pages/HomePage";
 import ProductListing from "./Pages/ProductListing";
 import ProductDetails from "./Pages/ProductDetails";
+
 import Button from "@mui/material/Button";
 import Dialog, { DialogProps } from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
@@ -16,6 +17,9 @@ import RegisterPage from "./Pages/Register";
 
 interface MyContextType {
   setOpenProductDetailsModal: (value: boolean) => void;
+  setOpenCartPanel: (value: boolean) => void;
+  openCartPanel: boolean;
+  toggleCartPanel: (newOpen: boolean) => void;
 }
 
 export const MyContext = createContext<MyContextType | null>(null);
@@ -52,12 +56,22 @@ function App() {
   const [openProductDetailsModal, setOpenProductDetailsModal] = useState(false);
   const [fullWidth, setFullWidth] = useState(true);
   const [maxWidth, setMaxWidth] = useState<DialogProps["maxWidth"]>("lg");
+  const [openCartPanel, setOpenCartPanel] = useState(false);
 
   const handleCloseProductDetailsModal = () => {
     setOpenProductDetailsModal(false);
   };
 
-  const values = { setOpenProductDetailsModal };
+  const toggleCartPanel = (newOpen: boolean) => () => {
+    setOpenCartPanel(newOpen);
+  };
+
+  const values = {
+    setOpenProductDetailsModal,
+    setOpenCartPanel,
+    openCartPanel,
+    toggleCartPanel
+  };
   return (
     <MyContext.Provider value={values}>
       <RouterProvider router={router} />
