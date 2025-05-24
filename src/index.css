@@ -201,4 +201,9 @@
   .productDetailsModal .MuiDialogContent-root {
     padding: 0px !important;
   }
+
+  /* Cart */
+  #size-menu .MuiButtonBase-root {
+    font-size: 12px !important;
+  }
 }

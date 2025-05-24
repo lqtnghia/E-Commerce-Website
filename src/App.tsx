@@ -14,6 +14,7 @@ import { IoClose } from "react-icons/io5";
 import ProductDetailsContent from "./components/ProductDetailsContent";
 import LoginPage from "./Pages/Login";
 import RegisterPage from "./Pages/Register";
+import CartPage from "./Pages/Cart";
 
 interface MyContextType {
   setOpenProductDetailsModal: (value: boolean) => void;
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <RegisterPage />
+      },
+      {
+        path: "/cart",
+        element: <CartPage />
       }
     ]
   }
@@ -62,7 +67,8 @@ function App() {
     setOpenProductDetailsModal(false);
   };
 
-  const toggleCartPanel = (newOpen: boolean) => () => {
+  const toggleCartPanel = (newOpen: boolean) => {
+    console.log("toggleCartPanel called with:", newOpen);
     setOpenCartPanel(newOpen);
   };
 

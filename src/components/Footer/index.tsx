@@ -18,6 +18,11 @@ import { MyContext } from "../../App";
 
 const Footer = () => {
   const context = useContext(MyContext);
+  if (!context) {
+    console.error("MyContext is not provided");
+    return null; // Hoặc render một UI thay thế
+  }
+  const { openCartPanel, toggleCartPanel } = context;
   return (
     <>
       <footer className="py-6 bg-[#fafafa]">
@@ -227,21 +232,31 @@ const Footer = () => {
 
       {/* Cart Panel */}
       <Drawer
-        open={context?.openCartPanel}
+        open={openCartPanel}
         onClose={() => {
-          context?.toggleCartPanel(false);
+          toggleCartPanel(false);
         }}
         anchor="right"
         className="cartPanel"
       >
         <div className="flex items-center justify-between py-3 px-4 gap-3 border-b border-[rgba(0,0,0,0.1)]">
           <h4>Shopping Cart (1)</h4>
-          <IoClose
+
+          {/* <IoClose
             className="text-[20px] cursor-pointer"
             onClick={() => {
-              context?.toggleCartPanel(false);
+              toggleCartPanel(false);
             }}
-          />
+          /> */}
+          <Button
+            className="!min-w-[40px] !w-[40px] !h-[40px] !rounded-full !text-[#000] !bg-[#f1f1f1] !z-[1000]"
+            onClick={() => {
+              console.log("Closing cart panel");
+              toggleCartPanel(false);
+            }}
+          >
+            <IoClose className="text-[20px]" />
+          </Button>
         </div>
         <CartPanel />
       </Drawer>

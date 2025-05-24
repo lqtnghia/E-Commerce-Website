@@ -7,6 +7,10 @@ import { FcGoogle } from "react-icons/fc";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [formFields, setFormFields] = useState({
+    email: "",
+    password: ""
+  });
   const handleTogglePassword = () => {
     setShowPassword((prev) => !prev);
   };
@@ -25,6 +29,7 @@ const LoginPage = () => {
                 type="email"
                 variant="outlined"
                 className="w-full"
+                name="name"
               />
             </div>
             <div className="form-group w-full mb-5">
@@ -33,6 +38,7 @@ const LoginPage = () => {
                 label="Password *"
                 variant="outlined"
                 className="w-full"
+                name="password"
                 type={showPassword ? "text" : "password"}
                 InputProps={{
                   endAdornment: (
